@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#BottomNavigation
+
 仿照闲鱼的底部菜单栏，可以自定义数目大小,借鉴了以下项目，对原项目感兴趣的的可以去逛下
 [https://github.com/Ashok-Varma/BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation "BottomNavigation")
 
@@ -27,7 +26,7 @@
 #### 2.添加Gradle依赖
 
 	dependencies {
-	        compile 'com.github.leojiao123:bottomNavigation:1.0.2'
+	        compile 'com.github.zongyujie:bottomNavigation:1.0.1'
 	}
 
 #### 3.布局中添加
@@ -107,7 +106,7 @@
 	 以上2个方法在initialise之前调用
 
 	 bottom_navigation_bar.setBadgeVisible(0, true); // 设置某个位置的badge 显示或隐藏
-     bottom_navigation_bar.setBadgeMargin(0, 15); //  设置badge 左右间距（不可过大）
+     bottom_navigation_bar.setBadgeMargin(0, 10,10,0,0); // 自行调整至合适状态 //  设置badge 左右间距（不可过大）
 	 以上2个方法在initialise之后调用
  
 
