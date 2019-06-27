@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #BottomNavigation
 仿照闲鱼的底部菜单栏，可以自定义数目大小,借鉴了以下项目，对原项目感兴趣的的可以去逛下
 [https://github.com/Ashok-Varma/BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation "BottomNavigation")
@@ -109,3 +110,6 @@
      bottom_navigation_bar.setBadgeMargin(0, 15); //  设置badge 左右间距（不可过大）
 	 以上2个方法在initialise之后调用
  
+
+
+
