@@ -40,13 +40,13 @@ public class MainActivity extends Activity {
                 .setTitle("城市")
                 .setIconWidth(25);
 
-//        BottomNavigationItem item3 = new BottomNavigationItem()
-//                .setIconActiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
-//                .setIconInactiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
-//                .setLabelInActiveColor(Color.parseColor("#000000"))
-//                .setLabelActiveColor(Color.parseColor("#FF0000"))
-//                .setTitle("发布")
-//                .setIconWidth(65);
+        BottomNavigationItem item3 = new BottomNavigationItem()
+                .setIconActiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
+                .setIconInactiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
+                .setLabelInActiveColor(Color.parseColor("#000000"))
+                .setLabelActiveColor(Color.parseColor("#FF0000"))
+                .setTitle("发布")
+                .setIconWidth(65);
 
         BottomNavigationItem item4 = new BottomNavigationItem()
                 .setIconActiveDrawable(getResources().getDrawable(R.mipmap.tab_find_selected))
@@ -64,10 +64,10 @@ public class MainActivity extends Activity {
                 .setTitle("我的")
                 .setIconWidth(25);
 
-        bottom_navigation_bar.addItem(item1).addItem(item2).addItem(item4).addItem(item5);
+        bottom_navigation_bar.addItem(item1).addItem(item2).addItem(item3).addItem(item4).addItem(item5);
         bottom_navigation_bar.setFirstSelectedPosition(0);
         bottom_navigation_bar.setViewLineVisible(true);
-//        bottom_navigation_bar.setMenuHeight(90);
+        bottom_navigation_bar.setMenuHeight(90);
         bottom_navigation_bar.initialise();
 
         bottom_navigation_bar.setBadgeVisible(0, true);
