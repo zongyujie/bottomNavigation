@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.zhmf.library.bottomnavigation"
+        applicationId "com.zhmf.library"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1

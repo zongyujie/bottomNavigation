@@ -1,9 +1,13 @@
-package com.zhmf.library.bottomnavigation;
+package com.zhmf.library;
 
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.zhmf.library.bottomnavigation.BottomNavigationBar;
+import com.zhmf.library.bottomnavigation.BottomNavigationItem;
+import com.zhmf.library.bottomnavigation.OnTabSelectedListener;
 
 public class MainActivity extends Activity {
 
@@ -25,7 +29,7 @@ public class MainActivity extends Activity {
                 .setBadgeDrawable(getResources().getDrawable(R.drawable.red_point))
                 .setTitle("首页")
 
-                .setBadgeMessage("99+")
+                .setBadgeMessage("")
                 .setIconWidth(25);
 
         BottomNavigationItem item2 = new BottomNavigationItem()
@@ -36,13 +40,13 @@ public class MainActivity extends Activity {
                 .setTitle("城市")
                 .setIconWidth(25);
 
-        BottomNavigationItem item3 = new BottomNavigationItem()
-                .setIconActiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
-                .setIconInactiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
-                .setLabelInActiveColor(Color.parseColor("#000000"))
-                .setLabelActiveColor(Color.parseColor("#FF0000"))
-                .setTitle("发布")
-                .setIconWidth(65);
+//        BottomNavigationItem item3 = new BottomNavigationItem()
+//                .setIconActiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
+//                .setIconInactiveDrawable(getResources().getDrawable(R.mipmap.tab_post))
+//                .setLabelInActiveColor(Color.parseColor("#000000"))
+//                .setLabelActiveColor(Color.parseColor("#FF0000"))
+//                .setTitle("发布")
+//                .setIconWidth(65);
 
         BottomNavigationItem item4 = new BottomNavigationItem()
                 .setIconActiveDrawable(getResources().getDrawable(R.mipmap.tab_find_selected))
@@ -60,15 +64,15 @@ public class MainActivity extends Activity {
                 .setTitle("我的")
                 .setIconWidth(25);
 
-        bottom_navigation_bar.addItem(item1).addItem(item2).addItem(item3).addItem(item4).addItem(item5);
+        bottom_navigation_bar.addItem(item1).addItem(item2).addItem(item4).addItem(item5);
         bottom_navigation_bar.setFirstSelectedPosition(0);
         bottom_navigation_bar.setViewLineVisible(true);
-        bottom_navigation_bar.setMenuHeight(90);
+//        bottom_navigation_bar.setMenuHeight(90);
         bottom_navigation_bar.initialise();
 
         bottom_navigation_bar.setBadgeVisible(0, true);
-        bottom_navigation_bar.setBadgeMargin(0, 10,10,10,0); // 自行调整至合适状态
-        bottom_navigation_bar.setBadgeText(0, "99+");
+        bottom_navigation_bar.setBadgeMargin(0, 10,10,0,0); // 自行调整至合适状态
+        bottom_navigation_bar.setBadgeText(0, "");
 
         // 需要在初始化完成之后调用
 

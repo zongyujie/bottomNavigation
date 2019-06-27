@@ -37,7 +37,7 @@
 	    xmlns:tools="http://schemas.android.com/tools"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
-	    tools:context="com.zhmf.library.bottomnavigation.MainActivity">
+	    tools:context="com.zhmf.library.MainActivity">
 	
 	    <com.zhmf.library.bottomnavigation.BottomNavigationBar
 	        android:id="@+id/bottom_navigation_bar"

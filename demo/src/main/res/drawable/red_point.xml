@@ -6,6 +6,8 @@
                 <corners android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0px" android:bottomRightRadius="5.0px" />
     -->
             <solid android:color="#EF3F3F" />
+            <size android:width="10dp"
+                android:height="10dp" />
         </shape>
     </item>
 </layer-list>
